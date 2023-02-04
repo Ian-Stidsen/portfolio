@@ -1,0 +1,50 @@
+
+
+.portfolio-contact {
+  display: grid;
+  grid-template-areas: 
+  "name email"
+  "subject subject"
+  "message message";
+  grid-template-rows: 25px 30px 80px;
+  width: 500px;
+  max-width: 90vw;
+}
+
+#name {grid-area: name;}
+#email {grid-area:email;}
+#subject {grid-area:subject;}
+#message {grid-area:message;}
+
+#name,
+#email,
+#subject {
+  text-align: center;
+}
+
+#message {
+  text-align: center;
+  resize: none;
+  padding-top: 5px;
+}
+
+textarea::placeholder {
+  line-height: 60px;
+  font-size: 30px;
+}
+
+.submit-contact {
+  background-color: #393939;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.submit-contact:hover {
+  opacity: 95%;
+}
