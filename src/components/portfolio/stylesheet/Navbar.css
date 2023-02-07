@@ -16,33 +16,34 @@
   justify-content: space-between;
   align-items: center;
   height: 40px;
-  padding: 0 40px 0 10px;
+  padding: 0 40px;
   background-color: var(--navbar-bg-color);
   z-index: 1000;
 }
 
 .portfolio-navbar h1,
-.portfolio-navbar-links a,
-.portfolio-navbar-scroll-buttons button {
+.portfolio-navbar-links a {
   color: var(--navbar-text-color);
 }
 
-.portfolio-navbar-links a,
-.portfolio-navbar-scroll-buttons button {
+.portfolio-navbar-links a {
   background: none;
   border: none;
   font-size: 1rem;
   cursor: pointer;
 }
 
-.portfolio-navbar-links,
-.portfolio-navbar-scroll-buttons {
+.portfolio-navbar-links {
   display: flex;
   flex-direction: row;
   list-style: none;
 }
 
-.portfolio-navbar-links li,
-.portfolio-navbar-scroll-buttons li {
+.portfolio-navbar-links li {
   margin: 0 10px;
+}
+
+.navbar-icons {
+  width: 30px;
+  height: 30px;
 }

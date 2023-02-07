@@ -1,15 +1,15 @@
 
 import './stylesheet/Portfolio.css';
 
-import { Navbar } from './Navbar'
-import { Projects } from './Projects'
-import { Contact } from './Contact'
+import { Navbar } from '../components'
+import { Projects } from '../components'
+import { Contact } from '../components'
 
 export function Portfolio() {
   return (
     <div className="portfolio">
       <Navbar />
-      <div className='projects-cards'>
+      <div className='portfolio-projects'>
         <h2>Projects</h2>
         <Projects />
       </div>

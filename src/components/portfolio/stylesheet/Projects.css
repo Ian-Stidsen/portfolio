@@ -1,0 +1,90 @@
+:root {
+  --card-size: 250px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-areas: 
+  'main main main'
+  '1 2 3';
+  justify-content: center;
+}
+
+.project-card {
+  width: var(--card-size);
+  height: var(--card-size);
+  border: 1px solid black;
+  background-position: top;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 5px;
+  max-width: 30vw;
+}
+
+.project-card:first-child {
+  grid-area: main;
+  width: calc(var(--card-size) * 3.1);
+  height: var(--card-size);
+  background-image: url('../../../assets/llregnskab.jpg');
+  max-width: 93.3vw;
+}
+
+.project-card:nth-child(2) {background-image: url('../../../assets/llregnskab.jpg');}
+.project-card:nth-child(3) {background-image: url('../../../assets/llregnskab.jpg');}
+.project-card:nth-child(4) {background-image: url('../../../assets/llregnskab.jpg');}
+
+
+.card-hover {
+  display: none;
+  grid-template-areas: 
+  'name name'
+  'description description'
+  'a link';
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+
+
+.card-hover h2 {grid-area: name;}
+.card-hover p {grid-area: description;}
+.github-link {
+  grid-area: a;
+  right: 0;
+  position: absolute;
+}
+.page-link {grid-area: link;} 
+
+.card-hover h2,
+.card-hover p {
+  color: white;
+  text-shadow:  1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.card-hover a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4E4E4E;
+  border-radius: 10px;
+  color: white;
+  height: 30px;
+  width: 80px;
+  margin: 5px;
+}
+
+
+.card-hover a:hover {
+  background-color: #696969;
+}
+
+.project-card:hover > .card-hover {
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.project-card:hover {
+}
