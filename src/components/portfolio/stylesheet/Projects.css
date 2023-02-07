@@ -6,50 +6,65 @@
   display: grid;
   grid-template-areas: 
   'main main main'
-  '1 2 3';
+  'cc tl st';
   justify-content: center;
+  width: 750px;
+  height: 750px;
+  max-width: 90vw;
+  grid-template-rows: 1.5fr 1fr 1fr;
 }
 
 .project-card {
-  width: var(--card-size);
-  height: var(--card-size);
+  display: flex;
   border: 1px solid black;
   background-position: top;
   background-size: cover;
+  background-position: top right;
   border-radius: 5px;
   margin: 5px;
-  max-width: 30vw;
 }
 
 .project-card:first-child {
   grid-area: main;
-  width: calc(var(--card-size) * 3.1);
-  height: var(--card-size);
   background-image: url('../../../assets/llregnskab.jpg');
-  max-width: 93.3vw;
 }
 
-.project-card:nth-child(2) {background-image: url('../../../assets/llregnskab.jpg');}
-.project-card:nth-child(3) {background-image: url('../../../assets/llregnskab.jpg');}
-.project-card:nth-child(4) {background-image: url('../../../assets/llregnskab.jpg');}
+.project-card:nth-child(2) {
+  grid-area: cc;
+  background-image: url('../../../assets/converter.jpg');
+}
+.project-card:nth-child(3) {
+  grid-area: tl;
+  background-image: url('../../../assets/todo-list.jpg');
+  background-position: center;
+}
+.project-card:nth-child(4) {
+  grid-area: st;
+  background-image: url('../../../assets/speedtype.jpg');
+  background-position: center;
+}
 
 
 .card-hover {
-  display: none;
+  display: grid;
   grid-template-areas: 
   'name name'
   'description description'
   'a link';
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1.5fr 1fr;
   grid-template-columns: 1fr 1fr;
   height: 100%;
   text-align: center;
   position: relative;
+  opacity: 0;
 }
 
 
 
-.card-hover h2 {grid-area: name;}
+.card-hover h2 {
+  grid-area: name;
+  margin-top: 10px;
+}
 .card-hover p {grid-area: description;}
 .github-link {
   grid-area: a;
@@ -82,9 +97,17 @@
 }
 
 .project-card:hover > .card-hover {
-  display: grid;
-  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .6);
+  width: 100%;
 }
 
-.project-card:hover {
+@media screen and (max-width: 600px) {
+  .card-container {
+    grid-template-areas: 
+    'main main'
+    'cc tl'
+    'st blank';
+    height: 500px;
+  }
 }

@@ -7,26 +7,6 @@ export function Contact() {
 
   const emailForm = useRef();
 
-  const shakeInvalid = (input) => {
-    const emailInput = document.getElementsByClassName('email-input')[0];
-    const messageInput = document.getElementsByClassName('message-input')[0];
-    switch(input) {
-      case 'email':
-        emailInput.classList.add('shake');
-        break;
-      case'message':
-        messageInput.classList.add('shake');
-        break;
-      default:
-        emailInput.classList.add('shake');
-        messageInput.classList.add('shake');
-        break;
-    }
-    setTimeout(() => {
-      emailInput.classList.remove('shake');
-      messageInput.classList.remove('shake');
-    }, 500);
-  }
 
   const validateForm = () => {
     const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -48,6 +28,28 @@ export function Contact() {
     }
     return true;
   };
+
+
+  function shakeInvalid (input) {
+    const emailInput = document.getElementsByClassName('email-input')[0];
+    const messageInput = document.getElementsByClassName('message-input')[0];
+    switch(input) {
+      case 'email':
+        emailInput.classList.add('shake');
+        break;
+      case'message':
+        messageInput.classList.add('shake');
+        break;
+      default:
+        emailInput.classList.add('shake');
+        messageInput.classList.add('shake');
+        break;
+    }
+    setTimeout(() => {
+      emailInput.classList.remove('shake');
+      messageInput.classList.remove('shake');
+    }, 500);
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
