@@ -29,6 +29,10 @@
   background-image: url('../../../assets/llregnskab.jpg');
 }
 
+.project-card:first-child h2 {
+  font-size: 2rem;
+}
+
 .project-card:nth-child(2) {
   grid-area: cc;
   background-image: url('../../../assets/converter.jpg');
@@ -51,7 +55,7 @@
   'name name'
   'description description'
   'a link';
-  grid-template-rows: 1fr 1.5fr 1fr;
+  grid-template-rows: .75fr 1.5fr 1fr;
   grid-template-columns: 1fr 1fr;
   height: 100%;
   text-align: center;
@@ -65,7 +69,11 @@
   grid-area: name;
   margin-top: 10px;
 }
-.card-hover p {grid-area: description;}
+.card-hover p {
+  grid-area: description;
+  font-weight: bold;
+}
+
 .github-link {
   grid-area: a;
   right: 0;
@@ -76,7 +84,8 @@
 .card-hover h2,
 .card-hover p {
   color: white;
-  text-shadow:  1px 1px 1px rgba(0, 0, 0, 1);
+  text-shadow:  1px 1px 1px black;
+  margin: 10px;
 }
 
 .card-hover a {
@@ -98,7 +107,7 @@
 
 .project-card:hover > .card-hover {
   opacity: 1;
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, .7);
   width: 100%;
 }
 

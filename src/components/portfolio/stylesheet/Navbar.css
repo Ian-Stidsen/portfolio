@@ -43,6 +43,10 @@
   margin: 0 10px;
 }
 
+.portfolio-navbar-links a:hover {
+  color: #8B8B8B;
+}
+
 .navbar-icons {
   width: 30px;
   height: 30px;
