@@ -56,10 +56,10 @@ export function Contact() {
 
     if(validateForm()){
       emailjs.sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
         emailForm.current,
-        process.env.REACT_APP_API_KEY
+        process.env.REACT_APP_EMAIL_API_KEY
       );
       emailForm.current.reset();
     }
