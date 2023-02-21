@@ -3,11 +3,6 @@
   padding: 0;
 }
 
-:root {
-  --navbar-bg-color: #393939;
-  --navbar-text-color: white;
-}
-
 .portfolio-navbar {
   display: flex;
   position: sticky;
@@ -17,13 +12,13 @@
   align-items: center;
   height: 40px;
   padding: 0 40px;
-  background-color: var(--navbar-bg-color);
+  background-color: var(--border-color);
   z-index: 1000;
 }
 
 .portfolio-navbar h1,
 .portfolio-navbar-links a {
-  color: var(--navbar-text-color);
+  color: var(--theme-cyan);
 }
 
 .portfolio-navbar-links a {
@@ -44,7 +39,7 @@
 }
 
 .portfolio-navbar-links a:hover {
-  color: #8B8B8B;
+  opacity: .8;
 }
 
 .navbar-icons {

@@ -11,6 +11,19 @@ export function Portfolio() {
       <Helmet><title>Portfolio</title></Helmet>
       <div className="portfolio">
         <Navbar />
+        <div className='portfolio-intro'>
+          <div className='linear-gradient-angle tl'></div>
+          <div className='intro-left'>
+            <h1>Welcome</h1>
+            <h2>Hello, my name is <strong>Ian Lund Stidsen</strong></h2>
+            <p>
+              I'm a self-taught <strong>Front-end developer</strong> based in Nuuk, Greenland. <br></br>
+              I enjoy making programming projects and, <br></br> i find it fun to challenge myself to learn new things.
+            </p>
+          </div>
+          <div className='linear-gradient-angle br'></div>
+        </div>
+
         <div className='portfolio-projects'>
           <h2>Projects</h2>
           <Projects />

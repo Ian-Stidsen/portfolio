@@ -29,7 +29,7 @@ export function Projects() {
             <a className='github-link' href='https://github.com/Ian-Stidsen/currency-converter' target='_blank' rel='noreferrer'>
               <i>Github</i>
             </a>
-            <Link className='page-link' to='/converter' target='_blank' rel='noreferrer'>Page</Link>
+            <Link className='page-link' to='/currency-converter/' target='_blank' rel='noreferrer'>Page</Link>
           </div>
         </div>
 
@@ -42,7 +42,7 @@ export function Projects() {
             <a className='github-link' href='https://github.com/Ian-Stidsen/react-todo' target='_blank' rel='noreferrer'>
               <i>Github</i>
             </a>
-            <Link className='page-link' to='/todolist' target='_blank' rel='noreferrer'>Page</Link>
+            <Link className='page-link' to='/react-todo/' target='_blank' rel='noreferrer'>Page</Link>
           </div>
         </div>
 
@@ -55,7 +55,7 @@ export function Projects() {
             <a className='github-link' href='https://github.com/Ian-Stidsen/speedtype-game' target='_blank' rel='noreferrer'>
               <i>Github</i>
             </a>
-            <Link className='page-link' to='/speedtype' target='_blank' rel='noreferrer'>Page</Link>
+            <Link className='page-link' to='/speedtype-game/' target='_blank' rel='noreferrer'>Page</Link>
           </div>
         </div>
 

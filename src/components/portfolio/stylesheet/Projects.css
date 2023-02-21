@@ -9,14 +9,14 @@
   'cc tl st';
   justify-content: center;
   width: 750px;
-  height: 750px;
+  height: 600px;
   max-width: 90vw;
-  grid-template-rows: 1.5fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
 }
 
 .project-card {
   display: flex;
-  border: 1px solid black;
+  border: 2px solid var(--border-color);
   background-position: top;
   background-size: cover;
   background-position: top right;
@@ -117,6 +117,6 @@
     'main main'
     'cc tl'
     'st blank';
-    height: 500px;
+    grid-template-rows: 1.5fr 1fr 1fr;
   }
 }

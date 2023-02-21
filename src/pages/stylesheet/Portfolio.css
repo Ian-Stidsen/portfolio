@@ -1,17 +1,113 @@
 
 
-:root {
-  --portfolio-header-color: #1D1D1D;
-}
-
 .portfolio {
   height: 200vh;
+}
+
+.portfolio-intro {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.linear-gradient-angle {
+  content: '';
+  display: flex;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: var(--linear-diagonal);
+  border-top-left-radius: 5px;
+  z-index: -2;
+}
+
+.linear-gradient-angle::before {
+  content: '';
+  display: flex;
+  position: relative;
+  top: 15px;
+  left: 15px;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  border-top-left-radius: 5px;
+  z-index: -1;
+}
+
+.linear-gradient-angle::after {
+  content: '';
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 200px solid var(--bg-color);
+  border-left: 200px solid transparent;
+  z-index: -1;
+}
+
+.linear-gradient-angle.tl {
+  top: 0;
+  left: 100px;
+}
+
+.linear-gradient-angle.br {
+  transform: rotate(180deg);
+  bottom: 0;
+  right: 100px;
+}
+
+.intro-left {
+  position: relative;
+}
+
+.intro-left::before {
+  content: '';
+  display: flex;
+  width: 80px;
+  height: 2px;
+  position: absolute;
+  left: -38px;
+  bottom: 45px;
+  transform: rotate(270deg);
+  background: var(--linear-straight);
+  z-index: -2;
+}
+
+.intro-left h1,
+.intro-left h2,
+.intro-left h3,
+.intro-left p {
+  color: white;
+  font-weight: 250;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.intro-left h1 {
+  font-size: 80px;
+  margin: 0;
+  color: var(--theme-cyan);
+}
+
+strong {
+  color: var(--theme-cyan);
 }
 
 .portfolio-projects {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+.portfolio-projects h2 {
+  color: var(--theme-cyan);
+  font-size: 40px;
+  font-weight: 300;
 }
 
 .contact-form {
@@ -19,10 +115,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: 50px;
 }
 
 .contact-form h2 {
-  color: var(--portfolio-header-color);
+  color: var(--theme-cyan);
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
