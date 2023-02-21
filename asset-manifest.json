@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7fe47a58.css",
+    "main.js": "/static/js/main.9088e9ea.js",
+    "static/media/llregnskab.jpg": "/static/media/llregnskab.a3ad0a3e857dc6cbe728.jpg",
+    "static/media/todo-list.jpg": "/static/media/todo-list.32f23d0dd55803ab32ac.jpg",
+    "static/media/speedtype.jpg": "/static/media/speedtype.0328bd01ea38f2023415.jpg",
+    "static/media/converter.jpg": "/static/media/converter.9fb4380bf96d90be9040.jpg",
+    "index.html": "/index.html",
+    "main.7fe47a58.css.map": "/static/css/main.7fe47a58.css.map",
+    "main.9088e9ea.js.map": "/static/js/main.9088e9ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fe47a58.css",
+    "static/js/main.9088e9ea.js"
+  ]
+}
