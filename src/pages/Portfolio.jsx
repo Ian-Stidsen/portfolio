@@ -26,6 +26,7 @@ export function Portfolio() {
 
         <div className='portfolio-projects'>
           <h2>Projects</h2>
+          <div className='linear-gradient-angle sm'></div>
           <Projects />
         </div>
 

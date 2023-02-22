@@ -60,6 +60,27 @@
   right: 100px;
 }
 
+.linear-gradient-angle.sm {
+  height: 100px;
+  width: 100px;
+  border-top-left-radius: 10px;
+  top: 0;
+  left: -20px;
+  position: relative;
+}
+
+.linear-gradient-angle.sm::after {
+  border-bottom: 100px solid var(--bg-color);
+  border-left: 100px solid transparent;
+}
+
+.linear-gradient-angle.sm::before {
+  top: 10px;
+  left: 10px;
+  border-top-left-radius: 10px;
+}
+
+
 .intro-left {
   position: relative;
 }
@@ -102,12 +123,15 @@ strong {
   flex-direction: column;
   align-items: center;
   position: relative;
+  width: 200px;
+  left: 150px;
 }
 
 .portfolio-projects h2 {
   color: var(--theme-cyan);
   font-size: 40px;
   font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .contact-form {
