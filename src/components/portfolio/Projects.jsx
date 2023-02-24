@@ -22,6 +22,7 @@ export function Projects() {
         </ul>
         
         <div className='contact-links'>
+          <h2>Contacts</h2>
           <ul className='contact-list'>
             <li>
               <a href='https://github.com/Ian-Stidsen' target='_blank' rel='noreferrer'>

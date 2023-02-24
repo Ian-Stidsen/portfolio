@@ -1,0 +1,147 @@
+.linear-gradient-angle {
+  content: '';
+  display: flex;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: var(--linear-diagonal);
+  border-top-left-radius: 5px;
+  z-index: -2;
+}
+
+.linear-gradient-angle::before {
+  content: '';
+  display: flex;
+  position: relative;
+  top: 15px;
+  left: 15px;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  border-top-left-radius: 5px;
+  z-index: -1;
+}
+
+.linear-gradient-angle::after {
+  content: '';
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 201px solid var(--bg-color);
+  border-left: 201px solid transparent;
+  z-index: -1;
+}
+
+.linear-gradient-angle.tl {
+  top: 0;
+  left: 0;
+}
+
+.linear-gradient-angle.br {
+  transform: rotate(180deg);
+  bottom: 0;
+  right: 0;
+}
+
+.linear-gradient-angle.sm,
+.linear-gradient-angle.smb {
+  height: 100px;
+  width: 100px;
+  border-top-left-radius: 10px;
+  position: absolute;
+}
+
+.linear-gradient-angle.sm::after,
+.linear-gradient-angle.smb::after {
+  border-bottom: 101px solid var(--bg-color);
+  border-left: 101px solid transparent;
+}
+
+.linear-gradient-angle.sm::before,
+.linear-gradient-angle.smb::before {
+  top: 7px;
+  left: 7px;
+  border-top-left-radius: 7px;
+}
+
+.linear-gradient-angle.sm {
+  top: 50px;
+  left: 0;
+}
+
+.linear-gradient-angle.smb {
+  transform: rotate(180deg);
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .linear-gradient-angle {
+    height: 150px;
+    width: 150px;
+  }
+
+  .linear-gradient-angle::after {
+    border-bottom: 151px solid var(--bg-color);
+    border-left: 151px solid transparent;
+  }
+
+  .linear-gradient-angle::before {
+    top: 10px;
+    left: 10px;
+  }
+
+  .linear-gradient-angle.sm,
+  .linear-gradient-angle.smb {
+    height: 75px;
+    width: 75px;
+  }
+
+  .linear-gradient-angle.sm::after,
+  .linear-gradient-angle.smb::after {
+    border-bottom: 76px solid var(--bg-color);
+    border-left: 76px solid transparent;
+  }
+
+  .linear-gradient-angle.sm::before,
+  .linear-gradient-angle.smb::before {
+    top: 5px;
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .linear-gradient-angle {
+    height: 100px;
+    width: 100px;
+  }
+
+  .linear-gradient-angle::after {
+    border-bottom: 101px solid var(--bg-color);
+    border-left: 101px solid transparent;
+  }
+
+  .linear-gradient-angle::before {
+    top: 7px;
+    left: 7px;
+  }
+
+  .linear-gradient-angle.sm,
+  .linear-gradient-angle.smb {
+    height: 60px;
+    width: 60px;
+  }
+
+  .linear-gradient-angle.sm::after,
+  .linear-gradient-angle.smb::after {
+    border-bottom: 61px solid var(--bg-color);
+    border-left: 61px solid transparent;
+  }
+
+  .linear-gradient-angle.sm::before,
+  .linear-gradient-angle.smb::before {
+    top: 4px;
+    left: 4px;
+  }
+}

@@ -22,17 +22,25 @@
 #email,
 #subject {
   text-align: center;
+  background-color: var(--theme-gray);
+  border: 1px solid black;
 }
 
 #message {
   text-align: center;
   resize: none;
   padding-top: 5px;
+  background-color: var(--theme-gray);
+  border: 1px solid black;
 }
 
 textarea::placeholder {
   line-height: 60px;
   font-size: 30px;
+}
+
+::placeholder {
+  color: white;
 }
 
 .asterisk-span {
@@ -68,7 +76,7 @@ textarea::placeholder {
 .message-input.shake {
   animation-name: shake;
   animation-duration: 500ms;
-  border-color: red;
+  border-color: red !important;
 }
 
 @keyframes shake {

@@ -46,6 +46,16 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  height: 150px;
+  width: 90px;
+}
+
+.contact-links h2 {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
 }
 
 .contact-list {

@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 import './stylesheet/Portfolio.css';
-import './stylesheet/gradient.css';
+import './stylesheet/gradient-corners.css';
 
 import { Projects } from '../components'
 import { Contact } from '../components'
@@ -10,7 +10,8 @@ import { useWindowSize } from '../hooks/useWindowSize';
 export function Portfolio() {
   const size = useWindowSize();
 
-
+  const brMorethan500 = size.width < 500? null : <br></br>;
+  const brLessthan450 = size.width > 450? null : <br></br>;
   return (
     <>
       <Helmet><title>Portfolio</title></Helmet>
@@ -20,10 +21,10 @@ export function Portfolio() {
           <span className='linear-gradient-angle tl'></span>
           <div className='intro-left'>
             <h1>Welcome</h1>
-            <h2>Hello, my name is <strong>Ian Lund Stidsen</strong></h2>
+            <h2>Hello, my name is {brLessthan450} <strong>Ian Lund Stidsen</strong></h2>
             <p>
-              I'm a self-taught <strong>Front-end developer</strong> based in Nuuk, Greenland. <br></br>
-              I enjoy making programming projects and, <br></br> i find it fun to challenge myself to learn new things.
+              I'm a self-taught Front-end developer based in Nuuk, {brMorethan500} Greenland. 
+              I enjoy making programming projects and, {brMorethan500} i find it fun to challenge myself to learn new things.
             </p>
           </div>
           <span className='linear-gradient-angle br'></span>
