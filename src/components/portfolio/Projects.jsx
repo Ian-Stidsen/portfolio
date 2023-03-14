@@ -33,7 +33,7 @@ export function Projects() {
               </a>
             </li>
             <li>
-              <a href='https://www.linkedin.com/in/ian-lund-stidsen-02aa51248/' target='_blank' rel='noreferrer'>
+              <a href='https://www.linkedin.com/in/ian-stidsen/' target='_blank' rel='noreferrer'>
                 <svg xmlns="http://www.w3.org/2000/svg" className="navbar-icons" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                   <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
@@ -45,7 +45,7 @@ export function Projects() {
               </a>
             </li>
             <li>
-              <a href='mailto:ianstidsen@gmail.com'>
+              <a href='mailto:ianstidsendev@gmail.com'>
                 <svg xmlns="http://www.w3.org/2000/svg" className="navbar-icons" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                   <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
