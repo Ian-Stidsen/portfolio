@@ -17,7 +17,7 @@ export function Projects() {
             <Link to='/react-todo/' target='_blank' rel='noreferrer'>Todo List</Link>
           </li>
           <li>
-            <Link to='/speedtype-game/' target='_blank' rel='noreferrer'>Speedtype</Link>
+            <Link to='/weather-forecast/' target='_blank' rel='noreferrer'>Weather Forecast</Link>
           </li>
         </ul>
         
